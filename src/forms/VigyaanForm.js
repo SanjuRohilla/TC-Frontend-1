@@ -222,11 +222,14 @@ const VigyaanForm = () => {
       }
 
       if (condition1 && condition2 && isNITRRConditions) {
-        try {
+if(isNITRR){
+           delete form.College_name;
+          try {
           const res = await axios.post(`${backend}/vigyaanReg`, form, {
             headers: {
               "Content-Type": "multipart/form-data",
             },
+          
           });
           // setAlertMessage(res.data.message);
           // setShowAlert(true);
@@ -247,6 +250,35 @@ const VigyaanForm = () => {
             type: "error"
           });
         }
+      }
+      else if(!isNITRR){
+          try {
+          const res = await axios.post(`${backend}/vigyaanReg`, form, {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          
+          });
+          // setAlertMessage(res.data.message);
+          // setShowAlert(true);
+          // setAlertType("success");
+          setAlert({
+            message: res.data.message,
+            show: true,
+            type: "success"
+          });
+        } catch (err) {
+          console.error(err);
+          // setAlertMessage(err.response.data.message);
+          // setShowAlert(true);
+          // setAlertType("error");
+          setAlert({
+            message: err.response.data.message,
+            show: true,
+            type: "error"
+          });
+        }
+      }
       } else {
         // setAlertMessage("Please fill all the necessary details correctly");
         // setShowAlert(true);

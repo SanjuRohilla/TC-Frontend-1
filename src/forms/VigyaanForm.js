@@ -222,6 +222,10 @@ const VigyaanForm = () => {
       }
 
       if (condition1 && condition2 && isNITRRConditions) {
+        const formData = { ...form };
+        if (formData.isNITRR === "Yes") {
+          delete formData.College_name;
+        }
         try {
           const res = await axios.post(`${backend}/vigyaanReg`, form, {
             headers: {

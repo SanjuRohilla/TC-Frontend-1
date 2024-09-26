@@ -1,15 +1,15 @@
 import axios from "axios";
 import React, {  useEffect, useRef, useState } from "react";
-// import { connect } from "react-redux";
+import { connect } from "react-redux";
 import urls from "../keys.json";
 import AOS from "aos";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
-//import keys from "../keys.json";
+import keys from "../keys.json";
 import "aos/dist/aos.css";
 import IGNITE_Template from "../assets/Ignite_Idea_Submission_Template/IGNITE_Template.pdf";
-//import IgniteLoader from "../layout/IgniteLoader";
-//import { Link } from "react-router-dom";
-//import toast from "react-hot-toast";
+import IgniteLoader from "../layout/IgniteLoader";
+import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 import AlertScreen from "../components/alertScreen";
 
 

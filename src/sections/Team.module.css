@@ -6,7 +6,11 @@
     justify-content: center;    
     padding: 7rem 0 0 0;
     align-items: center;
+    /* background-image: url(https://i.postimg.cc/5ypd5Wrv/Whats-App-Image-2024-10-13-at-10-32-50-2206b503.jpg); */
+    /* background-image: url(https://i.postimg.cc/BbmCngh5/Whats-App-Image-2024-10-13-at-16-24-47-1ec8fc69.jpg); */
+    background: transparent;
     gap: 2rem;
+    z-index: 2;
 }
 
 .title h1 {
@@ -22,9 +26,14 @@
 }
 
 .HeadSection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 6vw;
+    row-gap: 6vw;
+
+    
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     /* justify-content: space-between; */
     padding: 0 15rem;
 }

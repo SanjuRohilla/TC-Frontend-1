@@ -14,3 +14,32 @@ const Title = (props) => {
 }
 
 export default Title
+
+
+
+
+// import React from 'react';
+// import './Title.css'; // Assuming you're using a separate CSS file
+
+// const Title = ({ color, noncolor }) => {
+//   return (
+//     <div className="title-container">
+//       <h1 className="custom-font">
+//         <span className="colored-text">{color}</span> {noncolor}
+//       </h1>
+//     </div>
+//   );
+// };
+
+// export default Title;
+
+
+
+
+
+
+
+
+
+
+

@@ -1,19 +1,20 @@
-import Title from '../components/Title';
+// import PTitle from '../components/PokemonTitle';
+import Title from '../components/Title'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import styles from "./contact.module.css"
-
+import PTitle from '../components/PokemonTitle';
 const Contact = () => {
-  const color="CONTACT";
-  const noncolor="US";
+  const color="";
+  const noncolor="CONTACT US";
   useEffect(() => {
     AOS.init();
   }, [])
   return (
-    <section id="contact">
+    <section id="contact" className='background-color: transparent;'>
       <div className={styles.ContactContainer}>
-        <Title color={color} noncolor={noncolor}/>
+        <PTitle  noncolor={noncolor}/>
       
         <div className="fn_cs_contact_form">
           <form

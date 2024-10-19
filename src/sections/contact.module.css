@@ -4,7 +4,9 @@
 #subject {
     height: 3rem;
 }
-
+#contact{
+    background: transparent;
+}
 #message {
     height: 7rem;
 }
@@ -26,7 +28,7 @@
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     margin-left: 0.5rem;
-    box-shadow: 1px 1px 2px #49088a;
+    box-shadow: 1px 1px 2px #ecff16;
 }
 
 ul {

@@ -14,7 +14,7 @@ import ECE from "../components/branches/ECE";
 import Chem from "../components/branches/Chem";
 import { useEffect } from "react";
 import PageBanner from "../layout/PageBanner";
-import StarFieldAnimation from "../layout/StarFieldAnimation";
+// import StarFieldAnimation from "../layout/StarFieldAnimation";
 
 const ProblemStatements = () => {
   const { branch } = useParams();
@@ -61,7 +61,7 @@ const ProblemStatements = () => {
   return (
     <div className="Vigyaanscrolled">
       <div className="dark-overlay" style={{zIndex:"1"}}></div>
-          <StarFieldAnimation/>
+          {/* <StarFieldAnimation/> */}
 
     <div className="metaportal_fn_blog_single" style={{position:"relative",zIndex:"2"}}>
       <PageBanner pageName={"statements"} prePageLink={"/vigyaan"} prePageName={"vigyaan"} />

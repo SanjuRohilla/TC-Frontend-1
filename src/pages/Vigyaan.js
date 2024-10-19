@@ -46,7 +46,7 @@ const handleScroll = () => {
           <div className="AavartanContainer">
           {/*<VigyaanFinalistSection/>*/}
           <VigyaanGallery />
-          {/* <ProblemStatement /> */}
+           <ProblemStatement /> 
           {/* <VigyaanForm /> */}
           </div>
         </div>
